@@ -1,0 +1,89 @@
+.player-list {
+    display: flex;
+    list-style: none; /* 리스트를 표시하는 dot 제거 but 원래 dot의 공간(padding)이 남아있어 공백이 생긴다 */
+    padding: 1rem 0; /* ★ default가 16px이므로 1rem=16px, 위 아래 padding 적용하여 그림자 활성화 */
+    margin: 0;
+    overflow: hidden;
+    background-color: wheat; 
+  }
+  
+  .player-card {
+    width: 240px; /* px로 고정(웹브라우저 늘거나 줄어들때 마다 크기 변하면 부자연스러우므로  */
+    /* box-shadow: 블럭에 그림자를 적용하는 CSS 기능
+       https://developer.mozilla.org/ko/docs/Web/CSS/box-shadow 
+       offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2); /* ★중요 : 박스 자체가 흰색이므로 웹브라우저 상에 나타나게 하려면 box-shadow를 활용해야 한다 */
+    border-radius: 8px; /* 모서리 약간 둥글게 */
+    margin: 0 10px; /* 카드마다의 간격 */
+    transition: 0.4s;
+    /* IE11 에서는 flex 설정시, 디폴트로 flex 아이템들에 고정 너비를 무시 */
+    flex-shrink: 0;
+    background-image: url('../../../images/T1-player/profile_Jeus.jpg');
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  
+  .player-card:hover {
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+    transform: translate(0, -5px);
+  }
+
+  .player-container {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+    text-align: center;
+     /* 안에 내용이 많은 경우 간격 생성 */
+  }
+  
+  .player-intro {
+    
+    
+    text-align: center; 
+    /* align-items : 한줄에 대해 가운데(일자로) 정렬 
+    align-content : 여러 줄에 걸친 요소들을 가운데로 정렬 */
+  }
+
+  .player-image {
+    /* 사이즈가 큰 이미지를 작은 블럭 내에 넣을 때 호환성을 위해 max-width/max-height 를 사용해야 함 */
+    max-width: 240px;
+    margin-bottom: -5px; /* class-card의 width와 동일하게 설정 (100%로 설정?) */ 
+  
+    /* border-radius: 블럭 모서리를 둥글게 하는 CSS 기능
+       top-left | top-right | bottom-right | bottom-left 시계방향 */
+    border-radius: 8px 8px 0 0; /* 위쪽만 둥글게 하기 - "mdn에서 참고" */
+    z-index: -5;
+  }
+
+  .backToImage {
+    color: black;
+    text-decoration: none;
+    
+  }
+
+
+
+  .back-card {
+    
+    background-color:black;
+    height: 600px;
+    /* transition: all 0.6s; */
+  } 
+
+  .stat {
+    color:aliceblue;
+  }
+
+ 
+
+
+  .start {
+    opacity:0;
+  }
+  .end {
+    opacity:1;
+    transition :all 0.5s;
+   
+  }
