@@ -1,0 +1,62 @@
+.player-box {
+  background-color:black; /* 설정해주어야 height도 설정됨 */
+  height: 600px;
+  opacity: 0.5;
+  animation: 0.6s ease-in-out loadEffect1;
+}
+
+@keyframes loadEffect1 {
+  0%{ opacity: 0;
+      transform: translateX(-30px);
+  }
+  50%{
+      opacity: 0.5;
+      transform: translateX(30px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+.player-line {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 0.5rem 1rem 1rem 1rem;
+  text-align: center;
+  
+}
+
+.player-id {
+  
+  
+  text-align: center; 
+  /* align-items : 한줄에 대해 가운데(일자로) 정렬 
+  align-content : 여러 줄에 걸친 요소들을 가운데로 정렬 */
+}
+
+
+.back-card {
+    
+    background-color:black;
+    height: 600px;
+    opacity : 0.7;
+    animation: 0.7s ease-in-out loadEffect2;
+  }
+
+@keyframes loadEffect2 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+  
+
+.stat {
+   
+    color:aliceblue;
+}
