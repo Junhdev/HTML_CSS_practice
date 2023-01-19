@@ -12,14 +12,9 @@ import MainOfJeus from './Jeus/MainOfJeus';
 
 
 
-const Roster  = (props) => {
+const Roster  = () => {
     const [click, setClick] = useState(false);
     
-
-   
- 
-        
-
     /*     useEffect(()=>{
             첫 마운트시 메인 효과 실행 안되게
     },[]); */
@@ -30,7 +25,7 @@ const Roster  = (props) => {
                 <li className="player-card" >
                 
                     
-                    { click ? <StatsOfJeus/> : <MainOfJeus/> }
+                    { click ? <StatsOfJeus setClick={setClick} /> : <MainOfJeus setClick={setClick} /> }
                     
 
                 </li>
