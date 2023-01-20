@@ -33,7 +33,7 @@ function Navbar() {
         <>
           <nav className='navbar'>
             <Link to='/' className='navbar-logo'>
-                EPIC <i className='fab fa-firstdraft' />
+                LCK <i className='fab fa-firstdraft' />
             </Link>
             <div className='menu-icon' onClick={handleClick}> {/* 아이콘을 누르면 handleClick 함수가 실행되므로 click이 f<->t 반복되면서 바뀐다 */}
                 <i className={click ? 'fas fa-times' : 'fa-sharp fa-solid fa-bars'} /> {/*false가 첫 mount값이므로 이렇게 설정*/}
