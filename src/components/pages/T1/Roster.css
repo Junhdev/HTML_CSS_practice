@@ -1,7 +1,6 @@
    .player-list {
     display: flex;
     flex-wrap: wrap;
-    
     list-style: none; /* 리스트를 표시하는 dot 제거 but 원래 dot의 공간(padding)이 남아있어 공백이 생긴다 */
     padding: 1rem 0; /* ★ default가 16px이므로 1rem=16px, 위 아래 padding 적용하여 그림자 활성화 */
     margin: 0;
@@ -61,7 +60,7 @@
   @media screen and (max-width: 1024px) {
     .player-card{
       
-      flex-basis: 25%;
+      flex-basis: 20%;
       margin-bottom: 20px;
     
     }
@@ -75,7 +74,7 @@
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 300px) {
     .player-card{
       
       flex-basis: 60%;
