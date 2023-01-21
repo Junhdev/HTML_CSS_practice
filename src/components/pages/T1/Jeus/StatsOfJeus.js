@@ -8,7 +8,7 @@ function StatsOfJeus(props){
     
     return(
         <div className="back-card" >
-            <button onClick={()=>{props.setClick(false)}} className="bttn">버튼</button>
+            <button onClick={()=>{props.setClick1(false)}} className="bttn">버튼</button>
             <div className='stat'>성적</div>
         </div> 
     );
