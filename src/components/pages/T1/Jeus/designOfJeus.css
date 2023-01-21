@@ -1,21 +1,17 @@
 .player-box {
   background-color:black; /* 설정해주어야 height도 설정됨 */
   height: 600px;
-  opacity: 0.5;
+  opacity: 1;
   animation: 0.6s ease-in-out loadEffect1;
 }
 
 @keyframes loadEffect1 {
-  0%{ opacity: 0;
-      transform: translateX(-30px);
+  0%{
+    opacity: 0;
   }
-  50%{
-      opacity: 0.5;
-      transform: translateX(30px);
-  }
+ 
   100%{
-      opacity: 1;
-      transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -40,8 +36,8 @@
 .back-card {
     
     background-color:black;
-    height: 600px;
-    opacity : 0.7;
+    height: 800px;
+    opacity : 1;
     animation: 0.7s ease-in-out loadEffect2;
   }
 
